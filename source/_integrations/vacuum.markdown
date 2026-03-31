@@ -515,7 +515,7 @@ Available actions:
 - `clean_spot`
 - `clean_area`
 - `set_fan_speed`
-- `send_command`.
+- `send_command`
 
 Before calling one of these actions, make sure your vacuum platform supports it.
 
@@ -652,7 +652,9 @@ automation:
         entity_id: vacuum.office
     - action: notify.mobile_app_phone
       data:
-        message: "The office vacuum paused because a meeting started. Resume it when the call ends."
+        message: >-
+          The office vacuum paused because a meeting started.
+          Resume it when the call ends.
 ```
 
 {% enddetails %}
